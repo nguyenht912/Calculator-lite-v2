@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lite Calculator 2</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap');
+    </style>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <script src="script.js" defer></script> -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Start Calc grid holder -->
+        <div class="calculator calculator--shadow">
+            <!-- Start Calc display screen -->
+            <div class="calculator__display">
+                <div data-previous class="calculator__display--previous">hello</div>
+                <div data-current class="calculator__display--current">0</div>
+            </div>
+            <!-- blank div -->
+            <!-- Start Calc Keypad -->
+            <div class="calculator__keypad">
+                <!-- Keypad: 1st row -->
+                <button data-key-type="clear">AC</button>
+                <button data-key-type="invert">&plusmn;</button>
+                <button data-key-type="operation" data-operation="mod">%</button>
+                <button data-key-type="operation" data-operation="div">&divide;</button>
+                <!-- Keypad: 2nd row -->
+                <button data-key-type="number">7</button>
+                <button data-key-type="number">8</button>
+                <button data-key-type="number">9</button>
+                <button data-key-type="operation" data-operation="mul">&times;</button>
+                <!-- Keypad: 3rd row -->
+                <button data-key-type="number">4</button>
+                <button data-key-type="number">5</button>
+                <button data-key-type="number">6</button>
+                <button data-key-type="operation" data-operation="sub">-</button>
+                <!-- Keypad: 4th row -->
+                <button data-key-type="number">1</button>
+                <button data-key-type="number">2</button>
+                <button data-key-type="number">3</button>
+                <button data-key-type="operation" data-operation="add">+</button>
+                <!-- Keypad: 5th row -->
+                <button data-key-type="delete">DEL</button>
+                <button data-key-type="number">0</button>
+                <button data-key-type="decimal">&CenterDot;</button>
+                <button data-key-type="equal">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

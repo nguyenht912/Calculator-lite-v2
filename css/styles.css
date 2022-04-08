@@ -1,0 +1,106 @@
+/* additional resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+}
+
+/* stylings */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #daf0ff;
+  min-height: 100vh;
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.calculator {
+  background-color: rgba(247, 248, 251, 1);
+  width: 425px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0 auto;
+  text-align: end;
+  border-radius: 30px;
+}
+
+.calculator--shadow {
+  box-shadow: 25px 25px 44px 1px rgba(96, 190, 255, 0.55);
+}
+
+.calculator__display {
+  margin: 2rem 2rem 0rem 2rem;
+  padding: 0 0.5rem;
+  display: grid;
+  align-content: center;
+  align-items: center;
+  /* background-color: aquamarine; */
+  grid-template-rows: repeat(2, 3.5rem);
+  border: 3px solid rgba(134, 134, 134, 0.3);
+  border-radius: 20px;
+}
+
+.calculator__display--current {
+  font-size: 3rem;
+  font-weight: 600;
+  word-break: break-all;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.calculator__display--previous {
+  font-size: 2rem;
+  color: rgba(56, 185, 255, 1);
+}
+
+.calculator__keypad {
+  /* background-color: aquamarine; */
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 3rem);
+  gap: 1rem;
+}
+
+.calculator__keypad button {
+  border-radius: 12px;
+  border: 1px solid rgba(247, 248, 251, 0);
+  background-color: #ffffff;
+  color: rgba(56, 185, 255, 1);
+  font-size: 1.5rem;
+  font-weight: 550;
+  box-shadow: -25px -25px 60px 1px rgba(96, 190, 255, 0.55);
+}
+
+button[data-operation],
+button[data-key-type="invert"] {
+  background-color: rgba(173, 226, 255, 1);
+  color: rgba(16, 157, 255, 1);
+}
+
+button[data-key-type="clear"] {
+  background-color: rgba(255, 176, 176, 1);
+  color: rgba(255, 107, 107, 1);
+}
+
+button[data-key-type="delete"] {
+  background-color: rgba(255, 245, 206, 1);
+  color: rgba(253, 206, 18, 1);
+}
+
+button[data-key-type="equal"]{
+  background-color: rgb(204, 245, 209);
+  color: rgb(58, 182, 74);
+}
+
+button:hover {
+  filter: brightness(75%);
+  cursor: pointer;
+}
